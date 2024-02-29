@@ -161,6 +161,7 @@ offset_right = 1152.0
 offset_bottom = 646.0
 texture = ExtResource("1_s8y22")
 stretch_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
@@ -176,3 +177,5 @@ layer_0/tile_data = PackedInt32Array(851969, 458752, 2, 851970, 524288, 2, 85197
 [node name="Frog" type="CharacterBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Frog"]
+
+[node name="Frog2" type="CharacterBody2D" parent="."]
