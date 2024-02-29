@@ -1,0 +1,104 @@
+[gd_scene load_steps=15 format=3 uid="uid://c8ufxb0gmqdno"]
+
+[ext_resource type="Texture2D" uid="uid://dsxds3ltgjfmx" path="res://Main Characters/Pink Man/Idle (32x32).png" id="1_e24lk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bsstg"]
+atlas = ExtResource("1_e24lk")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3yexv"]
+atlas = ExtResource("1_e24lk")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4xuar"]
+atlas = ExtResource("1_e24lk")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbwj0"]
+atlas = ExtResource("1_e24lk")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gddwu"]
+atlas = ExtResource("1_e24lk")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iil2s"]
+atlas = ExtResource("1_e24lk")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qwkhy"]
+atlas = ExtResource("1_e24lk")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ttumq"]
+atlas = ExtResource("1_e24lk")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ppobd"]
+atlas = ExtResource("1_e24lk")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tfrjf"]
+atlas = ExtResource("1_e24lk")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqhqx"]
+atlas = ExtResource("1_e24lk")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hiiyp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bsstg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3yexv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4xuar")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbwj0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gddwu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iil2s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qwkhy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ttumq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ppobd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tfrjf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nqhqx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qlan4"]
+size = Vector2(51, 59)
+
+[node name="Pink Guy" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(284, 141)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_hiiyp")
+frame_progress = 0.0790067
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(285.5, 153.5)
+shape = SubResource("RectangleShape2D_qlan4")
