@@ -1,8 +1,7 @@
-[gd_scene load_steps=19 format=3 uid="uid://cuhxaww3v3w0a"]
+[gd_scene load_steps=6 format=3 uid="uid://cuhxaww3v3w0a"]
 
 [ext_resource type="Texture2D" uid="uid://bijy6sijslgtb" path="res://Background/Green.png" id="1_s8y22"]
 [ext_resource type="Texture2D" uid="uid://bx6m1m6ssds5x" path="res://Terrain/Terrain (16x16).png" id="2_4u185"]
-[ext_resource type="Texture2D" uid="uid://dsxds3ltgjfmx" path="res://Main Characters/Pink Man/Idle (32x32).png" id="3_txx1j"]
 [ext_resource type="PackedScene" uid="uid://uf2jyjjvd2h8" path="res://Scenes/main_character_2.tscn" id="4_1j4d6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tifhl"]
@@ -588,91 +587,6 @@ texture = ExtResource("2_4u185")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_tifhl")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bsstg"]
-atlas = ExtResource("3_txx1j")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3yexv"]
-atlas = ExtResource("3_txx1j")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4xuar"]
-atlas = ExtResource("3_txx1j")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tbwj0"]
-atlas = ExtResource("3_txx1j")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gddwu"]
-atlas = ExtResource("3_txx1j")
-region = Rect2(128, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_iil2s"]
-atlas = ExtResource("3_txx1j")
-region = Rect2(160, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qwkhy"]
-atlas = ExtResource("3_txx1j")
-region = Rect2(192, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ttumq"]
-atlas = ExtResource("3_txx1j")
-region = Rect2(224, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ppobd"]
-atlas = ExtResource("3_txx1j")
-region = Rect2(256, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tfrjf"]
-atlas = ExtResource("3_txx1j")
-region = Rect2(288, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nqhqx"]
-atlas = ExtResource("3_txx1j")
-region = Rect2(320, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_hiiyp"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bsstg")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3yexv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4xuar")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tbwj0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gddwu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_iil2s")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qwkhy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ttumq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ppobd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tfrjf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nqhqx")
-}],
-"loop": true,
-"name": &"default",
-"speed": 1.0
-}]
-
 [node name="Eggs" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -693,15 +607,6 @@ layer_0/tile_data = PackedInt32Array(851969, 458752, 2, 851970, 524288, 2, 85197
 [node name="Frog" type="CharacterBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Frog"]
-
-[node name="Pink Guy" type="CharacterBody2D" parent="."]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Pink Guy"]
-texture_filter = 1
-position = Vector2(284, 141)
-scale = Vector2(3, 3)
-sprite_frames = SubResource("SpriteFrames_hiiyp")
-frame_progress = 0.106954
 
 [node name="Frog2" parent="." instance=ExtResource("4_1j4d6")]
 position = Vector2(73, 157)
